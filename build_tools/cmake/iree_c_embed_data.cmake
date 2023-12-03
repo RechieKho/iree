@@ -96,7 +96,7 @@ function(iree_c_embed_data)
 
   add_custom_command(
     OUTPUT "${_RULE_H_FILE_OUTPUT}" "${_RULE_C_FILE_OUTPUT}"
-    COMMAND generate_embed_data ${_ARGS} ${_RESOLVED_SRCS}
+    COMMAND ./generate_embed_data ${_ARGS} ${_RESOLVED_SRCS}
     DEPENDS generate_embed_data ${_RESOLVED_SRCS}
   )
 
